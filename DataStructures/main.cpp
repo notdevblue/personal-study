@@ -1,6 +1,7 @@
 #include <iostream>
 #include "list/list.h"
 #include "stack/stack.h"
+#include "queue/queue.h"
 
 int main()
 {
@@ -29,6 +30,7 @@ int main()
     std::cout << "[2]: " <<  my_list2[2] << std::endl;
     //*/
 
+    /*
     stack my_stack = stack(10);
 
     my_stack.push(1);
@@ -37,12 +39,28 @@ int main()
     my_stack.push(4);
     
     std::cout << my_stack.pop() << std::endl;
-    std::cout << my_stack.peek() << std::endl; // flush 이슈
+    std::cout << my_stack.peek() << std::endl; // flush 이슈로 endl 함
     std::cout << my_stack.pop() << std::endl;
     my_stack.push(154);
     std::cout << my_stack.pop() << std::endl;
     std::cout << my_stack.pop() << std::endl;
     std::cout << my_stack.pop() << std::endl;
+    //*/
+
+    //*
+    queue my_queue = queue(3);
+
+    my_queue.push(10);
+    my_queue.push(20);
+    my_queue.push(30);
+    
+    std::cout << my_queue.pop() << std::endl;
+    std::cout << my_queue.pop() << std::endl;
+    my_queue.push(40);
+    std::cout << my_queue.pop() << std::endl;
+    std::cout << my_queue.pop() << std::endl;
+    
+    //*/
 
     return 0;
 }
