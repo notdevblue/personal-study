@@ -54,11 +54,11 @@ int main()
     my_queue.push(20);
     my_queue.push(30);
     
-    std::cout << my_queue.pop() << std::endl;
-    std::cout << my_queue.pop() << std::endl;
+    std::cout << "1: " << my_queue.pop() << std::endl;
+    std::cout << "2: " << my_queue.pop() << std::endl;
     my_queue.push(40);
-    std::cout << my_queue.pop() << std::endl;
-    std::cout << my_queue.pop() << std::endl;
+    std::cout << "3: " << my_queue.pop() << std::endl;
+    std::cout << "4: " << my_queue.pop() << std::endl;
     
     //*/
 
